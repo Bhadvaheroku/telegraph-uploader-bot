@@ -22,11 +22,11 @@ bot = Client(
 INLINE_SELECT = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("Github🤩", url="https://github.com/sanila2007/telegraph-uploader-bot"),
-            InlineKeyboardButton("Report Bugs🤖", url="https://t.me/sanilaassistant_bot")
+            InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
+            InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/deathchatting_world")
         ],
         [
-            InlineKeyboardButton("Join Channel🌐", url="https://t.me/telsabots")
+            InlineKeyboardButton("Jᴏɪɴ Cʜᴀɴɴᴇʟ 🌐", url="https://t.me/DeathxBotz")
         ]
     ]
 )
@@ -34,8 +34,8 @@ INLINE_SELECT = InlineKeyboardMarkup(
 ERROR_BUTTON = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("Report Bugs🤖", url="https://t.me/sanilaassistant_bot"),
-            InlineKeyboardButton("Learn Bot🙂", url="https://t.me/sanilaassistant_bot")
+            InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/deathchatting_world"),
+            InlineKeyboardButton("ʟᴇᴀʀɴ ʙᴏᴛ 🙂", url="https://t.me/DeathxBotz")
         ]
     ]
 )
@@ -45,7 +45,7 @@ ERROR_BUTTON = InlineKeyboardMarkup(
 async def start(bot, message):
     text = f"Hello {message.from_user.first_name}!\n\nWelcome to the Telegraph uploader bot.\nYou can send me any " \
            f"image, video, animation and I will upload it to telegraph and send you a generated link. But the file must be LESS THAN 5MB!!\n\n" \
-           f"<a href=https://t.me/sanilaassistant_bot>Feel free to leave a feedback</a>"
+           f"<a href=https://t.me/TryToLiveAlon>Feel free to leave a feedback</a>"
     reply_markup = INLINE_SELECT
     await message.reply(
         text=text,
@@ -68,11 +68,11 @@ async def photo_upload(bot, message):
         IN_BUTTON = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Github🤩", url="https://github.com/sanila2007"),
-                    InlineKeyboardButton("Report Bugs🤖", url="https://t.me/sanilaassistant_bot")
+                    InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
+                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/deathchatting_world")
                 ],
                 [
-                    InlineKeyboardButton("Web Preview🌐", url=generated_link)
+                    InlineKeyboardButton("ᴡᴇʙ ᴘʀᴇᴠɪᴇᴡ 🌐", url=generated_link)
                 ]
             ]
         )
