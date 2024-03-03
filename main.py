@@ -15,7 +15,7 @@ bot = Client(
 INLINE_SELECT = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
+            InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ 🥀", url="https://t.me/TryToLiveAlon"),
             InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/deathchatting_world")
         ],
         [
@@ -39,11 +39,15 @@ async def start(bot, message):
     text = f"Hello {message.from_user.first_name}!\n\nWelcome to the Telegraph uploader bot.\nYou can send me any " \
            f"image, video, animation and I will upload it to telegraph and send you a generated link. But the file must be LESS THAN 5MB!!\n\n" \
            f"<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>"
+
+    # Sending the image along with the text
+    media = InputMediaPhoto(media="https://telegra.ph/file/fc9daf04702c3b508a601.jpg", caption=text)
+
     reply_markup = INLINE_SELECT
-    await message.reply(
-        text=text,
-        reply_markup=reply_markup,
-        disable_web_page_preview=True)
+
+    # Send the message with the image
+    await message.reply_media_group([media], reply_markup=reply_markup, disable_web_page_preview=True)
+
 
 
 ## UPLOAD PHOTOS
