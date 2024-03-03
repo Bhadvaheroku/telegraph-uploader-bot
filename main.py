@@ -329,6 +329,20 @@ async def sticker_upload_group(bot, message):
     finally:
         os.remove(download_path)
 
+@bot.on_message(filters.private & filters.command("broadcast") & filters.user(Config.ADMIN))
+async def broadcast_message(bot, message):
+    if len(message.text.split()) > 1:
+        broadcast_text = " ".join(message.text.split()[1:])
+        async for dialog in bot.iter_dialogs():
+            if dialog.chat.type == "private":
+                try:
+                    await bot.send_message(dialog.chat.id, broadcast_text)
+                except Exception as e:
+                    print(f"Failed to send broadcast to {dialog.chat.id}: {e}")
+        await message.reply("Broadcast completed successfully!")
+    else:
+        await message.reply("Please provide a message to broadcast!")
+        
 
 print("All good")
 
