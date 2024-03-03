@@ -50,7 +50,7 @@ async def start(bot, message):
            "๏ ⚔️ ᴘᴏᴡᴇʀ ʙʏ @DeathxBotz"
     image_url = "https://telegra.ph/file/58e635c527bbf872a512f.jpg"
     await message.reply_photo(photo=image_url, caption=text, reply_markup=INLINE_SELECT)
-.on_message(filters.photo & filters.private)
+@bot.on_message(filters.photo & filters.private)
 async def photo_upload(bot, message):
     msg = await message.reply("Uploading", quote=True)
     download_path = await bot.download_media(
