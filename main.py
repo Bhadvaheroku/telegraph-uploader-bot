@@ -34,16 +34,23 @@ ERROR_BUTTON = InlineKeyboardMarkup(
 )
 
 
-@bot.on_message(filters.command("start") & filters.private)
-async def start(bot, message):
-    text = f"Hello {message.from_user.first_name}!\n\nWelcome to the Telegraph uploader bot.\nYou can send me any " \
-           f"image, video, animation and I will upload it to telegraph and send you a generated link. But the file must be LESS THAN 5MB!!\n\n" \
-           f"<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>"
-    image_url = "https://telegra.ph/file/58e635c527bbf872a512f.jpg"
-    await message.reply_photo(photo=image_url, caption=text, reply_markup=INLINE_SELECT)
+
     
 
-@bot.on_message(filters.photo & filters.private)
+@bot@bot.on_message(filters.command("start") & filters.private)
+async def start(bot, message):
+    user = message.from_user
+    user_link = f"<a href='tg://user?id={user.id}'>{user.first_name}</a>"
+    text = f"ʜᴇʏ {user_link}, 🥀\n\n" \
+           "๏ ᴛʜɪs ɪs TeleGraph Bot !\n\n" \
+           "➻ ꜱᴇɴᴅ ᴀɴʏ ʙᴇʟᴏᴡ 5ᴍʙ ᴘʜᴏᴛᴏ/ᴠɪᴅᴇᴏ ᴛᴏ ɢᴇᴛ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ\n\n" \
+           "──────────────────\n" \
+           "๏ Dᴇᴠᴇʟᴏᴘᴇʀ 💞 <a href='https://t.me/TryToLiveAlon'>@TryToLiveAlon</a>\n\n" \
+           "──────────────────\n" \
+           "๏ ⚔️ ᴘᴏᴡᴇʀ ʙʏ @DeathxBotz"
+    image_url = "https://telegra.ph/file/58e635c527bbf872a512f.jpg"
+    await message.reply_photo(photo=image_url, caption=text, reply_markup=INLINE_SELECT)
+.on_message(filters.photo & filters.private)
 async def photo_upload(bot, message):
     msg = await message.reply("Uploading", quote=True)
     download_path = await bot.download_media(
