@@ -1,10 +1,3 @@
-# Copyright ©️ 2022 Sanila Ranatunga. All Rights Reserved
-# You are free to use this code in any of your project, but you MUST include the following in your README.md (Copy & paste)
-# ##Credits - [telegraph-uploader-bot] (https://github.com/sanila2007/telegraph-uploader-bot)
-
-# Read GNU General Public License v3.0: https://github.com/sanila2007/telegraph-uploader-bot/blob/mai/LICENSE
-# Don't forget to follow github.com/sanila2007 because I'm doing these things for free and open source
-# Star, fork, enjoy!
 
 import os
 from pyrogram import Client, filters
@@ -22,11 +15,11 @@ bot = Client(
 INLINE_SELECT = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("Github🤩", url="https://github.com/sanila2007/telegraph-uploader-bot"),
-            InlineKeyboardButton("Report Bugs🤖", url="https://t.me/sanilaassistant_bot")
+            InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
+            InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/sanilaassistant_bot")
         ],
         [
-            InlineKeyboardButton("Join Channel🌐", url="https://t.me/telsabots")
+            InlineKeyboardButton("Jᴏɪɴ ᴄʜᴀɴɴᴇʟ 🌐", url="https://t.me/telsabots")
         ]
     ]
 )
@@ -34,8 +27,8 @@ INLINE_SELECT = InlineKeyboardMarkup(
 ERROR_BUTTON = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("Report Bugs🤖", url="https://t.me/sanilaassistant_bot"),
-            InlineKeyboardButton("Learn Bot🙂", url="https://t.me/sanilaassistant_bot")
+            InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/sanilaassistant_bot"),
+            InlineKeyboardButton("ʟᴇᴀʀɴ ʙᴏᴛ 🙂", url="https://t.me/sanilaassistant_bot")
         ]
     ]
 )
@@ -68,11 +61,11 @@ async def photo_upload(bot, message):
         IN_BUTTON = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Github🤩", url="https://github.com/sanila2007"),
-                    InlineKeyboardButton("Report Bugs🤖", url="https://t.me/sanilaassistant_bot")
+                    InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
+                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/sanilaassistant_bot")
                 ],
                 [
-                    InlineKeyboardButton("Web Preview🌐", url=generated_link)
+                    InlineKeyboardButton("ᴡᴇʙ ᴘʀᴇᴠɪᴇᴡ 🌐", url=generated_link)
                 ]
             ]
         )
@@ -103,11 +96,11 @@ async def video_upload(bot, message):
         IN_BUTTON = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Github🤩", url="https://github.com/sanila2007"),
-                    InlineKeyboardButton("Report Bugs🤖", url="https://t.me/sanilaassistant_bot")
+                    InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
+                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/sanilaassistant_bot")
                 ],
                 [
-                    InlineKeyboardButton("Web Preview🌐", url=generated_Link)
+                    InlineKeyboardButton("ᴡᴇʙ ᴘʀᴇᴠɪᴇᴡ 🌐", url=generated_Link)
                 ]
             ]
         )
@@ -138,11 +131,11 @@ async def animation_upload(bot, message):
         IN_BUTTON = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Github🤩", url="https://github.com/sanila2007"),
-                    InlineKeyboardButton("Report Bugs🤖", url="https://t.me/sanilaassistant_bot")
+                    InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
+                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/sanilaassistant_bot")
                 ],
                 [
-                    InlineKeyboardButton("Web Preview🌐", url=generated_link)
+                    InlineKeyboardButton("ᴡᴇʙ ᴘʀᴇᴠɪᴇᴡ 🌐", url=generated_link)
                 ]
             ]
         )
@@ -173,11 +166,11 @@ async def animation_upload_groups(bot, message):
         IN_BUTTON = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Github🤩", url="https://github.com/sanila2007"),
-                    InlineKeyboardButton("Report Bugs🤖", url="https://t.me/sanilaassistant_bot")
+                    InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
+                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/sanilaassistant_bot")
                 ],
                 [
-                    InlineKeyboardButton("Web Preview🌐", url=generated_link)
+                    InlineKeyboardButton("ᴡᴇʙ ᴘʀᴇᴠɪᴇᴡ 🌐", url=generated_link)
                 ]
             ]
         )
@@ -208,11 +201,11 @@ async def photo_upload_groups(bot, message):
         IN_BUTTON = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Github🤩", url="https://github.com/sanila2007"),
-                    InlineKeyboardButton("Report Bugs🤖", url="https://t.me/sanilaassistant_bot")
+                    InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
+                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/sanilaassistant_bot")
                 ],
                 [
-                    InlineKeyboardButton("Web Preview🌐", url=generated_link)
+                    InlineKeyboardButton("ᴡᴇʙ ᴘʀᴇᴠɪᴇᴡ 🌐", url=generated_link)
                 ]
             ]
         )
@@ -243,11 +236,11 @@ async def video_upload_group(bot, message):
         IN_BUTTON = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Github🤩", url="https://github.com/sanila2007"),
-                    InlineKeyboardButton("Report Bugs🤖", url="https://t.me/sanilaassistant_bot")
+                    InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
+                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/sanilaassistant_bot")
                 ],
                 [
-                    InlineKeyboardButton("Web Preview🌐", url=generated_link)
+                    InlineKeyboardButton("ᴡᴇʙ ᴘʀᴇᴠɪᴇᴡ 🌐", url=generated_link)
                 ]
             ]
         )
@@ -279,11 +272,11 @@ async def sticker_upload(bot, message):
         IN_BUTTON = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Github🤩", url="https://github.com/sanila2007"),
-                    InlineKeyboardButton("Report Bugs🤖", url="https://t.me/sanilaassistant_bot")
+                    InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
+                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/sanilaassistant_bot")
                 ],
                 [
-                    InlineKeyboardButton("Web Preview🌐", url=generated_link)
+                    InlineKeyboardButton("ᴡᴇʙ ᴘʀᴇᴠɪᴇᴡ 🌐", url=generated_link)
                 ]
             ]
         )
@@ -314,11 +307,11 @@ async def sticker_upload_group(bot, message):
         IN_BUTTON = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Github🤩", url="https://github.com/sanila2007"),
-                    InlineKeyboardButton("Report Bugs🤖", url="https://t.me/sanilaassistant_bot")
+                    InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
+                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/sanilaassistant_bot")
                 ],
                 [
-                    InlineKeyboardButton("Web Preview🌐", url=generated_link)
+                    InlineKeyboardButton("ᴡᴇʙ ᴘʀᴇᴠɪᴇᴡ 🌐", url=generated_link)
                 ]
             ]
         )
