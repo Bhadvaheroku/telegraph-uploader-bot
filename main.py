@@ -16,7 +16,7 @@ INLINE_SELECT = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
-            InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/sanilaassistant_bot")
+            InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/deathchatting_world")
         ],
         [
             InlineKeyboardButton("Jᴏɪɴ ᴄʜᴀɴɴᴇʟ 🌐", url="https://t.me/telsabots")
@@ -27,7 +27,7 @@ INLINE_SELECT = InlineKeyboardMarkup(
 ERROR_BUTTON = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/sanilaassistant_bot"),
+            InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/deathchatting_world"),
             InlineKeyboardButton("ʟᴇᴀʀɴ ʙᴏᴛ 🙂", url="https://t.me/sanilaassistant_bot")
         ]
     ]
@@ -38,7 +38,7 @@ ERROR_BUTTON = InlineKeyboardMarkup(
 async def start(bot, message):
     text = f"Hello {message.from_user.first_name}!\n\nWelcome to the Telegraph uploader bot.\nYou can send me any " \
            f"image, video, animation and I will upload it to telegraph and send you a generated link. But the file must be LESS THAN 5MB!!\n\n" \
-           f"<a href=https://t.me/sanilaassistant_bot>Feel free to leave a feedback</a>"
+           f"<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>"
     reply_markup = INLINE_SELECT
     await message.reply(
         text=text,
@@ -62,7 +62,7 @@ async def photo_upload(bot, message):
             [
                 [
                     InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
-                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/sanilaassistant_bot")
+                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/deathchatting_world")
                 ],
                 [
                     InlineKeyboardButton("ᴡᴇʙ ᴘʀᴇᴠɪᴇᴡ 🌐", url=generated_link)
@@ -71,12 +71,12 @@ async def photo_upload(bot, message):
         )
     except:
         await msg.edit_text(
-            "File must be less than 5mb, please try another file or <a href=https://t.me/sanilaassistant_bot>LEARN THIS BOT FIRST!</a>",
+            "File must be less than 5mb, please try another file or <a href=https://t.me/deathchatting_world>LEARN THIS BOT FIRST!</a>",
             disable_web_page_preview=True, reply_markup=ERROR_BUTTON)
     else:
         t = await msg.edit_text(generated_link, disable_web_page_preview=True)
         await t.edit_text(
-            f"Link - `{generated_link} `\n\n<a href=https://t.me/sanilaassistant_bot>Feel free to leave a feedback</a>",
+            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>",
             reply_markup=IN_BUTTON,
             disable_web_page_preview=True)
     finally:
@@ -97,7 +97,7 @@ async def video_upload(bot, message):
             [
                 [
                     InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
-                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/sanilaassistant_bot")
+                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/deathchatting_world")
                 ],
                 [
                     InlineKeyboardButton("ᴡᴇʙ ᴘʀᴇᴠɪᴇᴡ 🌐", url=generated_Link)
@@ -106,12 +106,12 @@ async def video_upload(bot, message):
         )
     except:
         await msg.edit_text(
-            "File must be less than 5mb, please try another file or <a href=https://t.me/sanilaassistant_bot>LEARN THIS BOT FIRST!</a>",
+            "File must be less than 5mb, please try another file or <a href=https://t.me/deathchatting_world>LEARN THIS BOT FIRST!</a>",
             disable_web_page_preview=True, reply_markup=ERROR_BUTTON)
     else:
         t = await msg.edit_text(generated_Link, disable_web_page_preview=True)
         await t.edit_text(
-            f"Link - `{generated_Link} `\n\n<a href=https://t.me/sanilaassistant_bot>Feel free to leave a feedback</a>",
+            f"Link - `{generated_Link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>",
             reply_markup=IN_BUTTON,
             disable_web_page_preview=True)
     finally:
@@ -132,7 +132,7 @@ async def animation_upload(bot, message):
             [
                 [
                     InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
-                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/sanilaassistant_bot")
+                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/deathchatting_world")
                 ],
                 [
                     InlineKeyboardButton("ᴡᴇʙ ᴘʀᴇᴠɪᴇᴡ 🌐", url=generated_link)
@@ -141,13 +141,13 @@ async def animation_upload(bot, message):
         )
     except:
         await msg.edit_text(
-            "File must be less than 5mb, please try another file or <a href=https://t.me/sanilaassistant_bot>LEARN THIS BOT FIRST!</a>",
+            "File must be less than 5mb, please try another file or <a href=https://t.me/deathchatting_world>LEARN THIS BOT FIRST!</a>",
             reply_markup=INLINE_SELECT,
             disable_web_page_preview=True)
     else:
         t = await msg.edit_text(generated_link, disable_web_page_preview=True)
         await t.edit_text(
-            f"Link - `{generated_link} `\n\n<a href=https://t.me/sanilaassistant_bot>Feel free to leave a feedback</a>",
+            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>",
             reply_markup=IN_BUTTON,
             disable_web_page_preview=True)
     finally:
@@ -167,7 +167,7 @@ async def animation_upload_groups(bot, message):
             [
                 [
                     InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
-                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/sanilaassistant_bot")
+                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/deathchatting_world")
                 ],
                 [
                     InlineKeyboardButton("ᴡᴇʙ ᴘʀᴇᴠɪᴇᴡ 🌐", url=generated_link)
@@ -176,13 +176,13 @@ async def animation_upload_groups(bot, message):
         )
     except:
         await msg.edit_text(
-            "File must be less than 5mb, please try another file or <a href=https://t.me/sanilaassistant_bot>LEARN THIS BOT FIRST!</a>",
+            "File must be less than 5mb, please try another file or <a href=https://t.me/deathchatting_world>LEARN THIS BOT FIRST!</a>",
             reply_markup=INLINE_SELECT,
             disable_web_page_preview=True)
     else:
         t = await msg.edit_text(generated_link, disable_web_page_preview=True)
         await t.edit_text(
-            f"Link - `{generated_link} `\n\n<a href=https://t.me/sanilaassistant_bot>Feel free to leave a feedback</a>",
+            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>",
             reply_markup=IN_BUTTON,
             disable_web_page_preview=True)
     finally:
@@ -202,7 +202,7 @@ async def photo_upload_groups(bot, message):
             [
                 [
                     InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
-                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/sanilaassistant_bot")
+                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/deathchatting_world")
                 ],
                 [
                     InlineKeyboardButton("ᴡᴇʙ ᴘʀᴇᴠɪᴇᴡ 🌐", url=generated_link)
@@ -211,13 +211,13 @@ async def photo_upload_groups(bot, message):
         )
     except:
         await msg.edit_text(
-            "File must be less than 5mb, please try another file or <a href=https://t.me/sanilaassistant_bot>LEARN THIS BOT FIRST!</a>",
+            "File must be less than 5mb, please try another file or <a href=https://t.me/deathchatting_world>LEARN THIS BOT FIRST!</a>",
             reply_markup=INLINE_SELECT,
             disable_web_page_preview=True)
     else:
         t = await msg.edit_text(generated_link, disable_web_page_preview=True)
         await t.edit_text(
-            f"Link - `{generated_link} `\n\n<a href=https://t.me/sanilaassistant_bot>Feel free to leave a feedback</a>",
+            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>",
             reply_markup=IN_BUTTON,
             disable_web_page_preview=True)
     finally:
@@ -237,7 +237,7 @@ async def video_upload_group(bot, message):
             [
                 [
                     InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
-                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/sanilaassistant_bot")
+                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/deathchatting_world")
                 ],
                 [
                     InlineKeyboardButton("ᴡᴇʙ ᴘʀᴇᴠɪᴇᴡ 🌐", url=generated_link)
@@ -246,13 +246,13 @@ async def video_upload_group(bot, message):
         )
     except:
         await msg.edit_text(
-            "File must be less than 5mb, please try another file or <a href=https://t.me/sanilaassistant_bot>LEARN THIS BOT FIRST!</a>",
+            "File must be less than 5mb, please try another file or <a href=https://t.me/deathchatting_world>LEARN THIS BOT FIRST!</a>",
             reply_markup=INLINE_SELECT,
             disable_web_page_preview=True)
     else:
         t = await msg.edit_text(generated_link, disable_web_page_preview=True)
         await t.edit_text(
-            f"Link - `{generated_link} `\n\n<a href=https://t.me/sanilaassistant_bot>Feel free to leave a feedback</a>",
+            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>",
             reply_markup=IN_BUTTON,
             disable_web_page_preview=True)
     finally:
@@ -273,7 +273,7 @@ async def sticker_upload(bot, message):
             [
                 [
                     InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
-                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/sanilaassistant_bot")
+                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/deathchatting_world")
                 ],
                 [
                     InlineKeyboardButton("ᴡᴇʙ ᴘʀᴇᴠɪᴇᴡ 🌐", url=generated_link)
@@ -282,13 +282,13 @@ async def sticker_upload(bot, message):
         )
     except Exception as a:
         await msg.edit_text(
-            f"❌ This sticker was unable to upload. Please try another file or <a href=https://t.me/sanilaassistant_bot>LEARN THIS BOT FIRST!</a>\n\n<i>Caused error - {a}</i>",
+            f"❌ This sticker was unable to upload. Please try another file or <a href=https://t.me/deathchatting_world>LEARN THIS BOT FIRST!</a>\n\n<i>Caused error - {a}</i>",
             reply_markup=INLINE_SELECT,
             disable_web_page_preview=True)
     else:
         t = await msg.edit_text(generated_link, disable_web_page_preview=True)
         await t.edit_text(
-            f"Link - `{generated_link} `\n\n<a href=https://t.me/sanilaassistant_bot>Feel free to leave a feedback</a>",
+            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>",
             reply_markup=IN_BUTTON,
             disable_web_page_preview=True)
     finally:
@@ -308,7 +308,7 @@ async def sticker_upload_group(bot, message):
             [
                 [
                     InlineKeyboardButton("ᴍᴏʀᴇ 🥀", url="https://t.me/TryToLiveAlon"),
-                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/sanilaassistant_bot")
+                    InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/deathchatting_world")
                 ],
                 [
                     InlineKeyboardButton("ᴡᴇʙ ᴘʀᴇᴠɪᴇᴡ 🌐", url=generated_link)
@@ -317,13 +317,13 @@ async def sticker_upload_group(bot, message):
         )
     except Exception as a:
         await msg.edit_text(
-            f"❌ This sticker was unable to upload. Please try another file or <a href=https://t.me/sanilaassistant_bot>LEARN THIS BOT FIRST!</a>\n\n<i>Caused error - {a}</i>",
+            f"❌ This sticker was unable to upload. Please try another file or <a href=https://t.me/deathchatting_world>LEARN THIS BOT FIRST!</a>\n\n<i>Caused error - {a}</i>",
             reply_markup=INLINE_SELECT,
             disable_web_page_preview=True)
     else:
         t = await msg.edit_text(generated_link, disable_web_page_preview=True)
         await t.edit_text(
-            f"Link - `{generated_link} `\n\n<a href=https://t.me/sanilaassistant_bot>Feel free to leave a feedback</a>",
+            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>",
             reply_markup=IN_BUTTON,
             disable_web_page_preview=True)
     finally:
