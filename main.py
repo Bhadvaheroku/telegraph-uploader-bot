@@ -76,7 +76,7 @@ async def photo_upload(bot, message):
     else:
         t = await msg.edit_text(generated_link, disable_web_page_preview=True)
         await t.edit_text(
-            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>",
+            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>\n\n Join - @DeathxBotz",
             reply_markup=IN_BUTTON,
             disable_web_page_preview=True)
     finally:
@@ -111,7 +111,7 @@ async def video_upload(bot, message):
     else:
         t = await msg.edit_text(generated_Link, disable_web_page_preview=True)
         await t.edit_text(
-            f"Link - `{generated_Link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>",
+            f"Link - `{generated_Link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>\n\n Join - @DeathxBotz",
             reply_markup=IN_BUTTON,
             disable_web_page_preview=True)
     finally:
@@ -147,7 +147,7 @@ async def animation_upload(bot, message):
     else:
         t = await msg.edit_text(generated_link, disable_web_page_preview=True)
         await t.edit_text(
-            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>",
+            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>\n\n Join - @DeathxBotz",
             reply_markup=IN_BUTTON,
             disable_web_page_preview=True)
     finally:
@@ -182,7 +182,7 @@ async def animation_upload_groups(bot, message):
     else:
         t = await msg.edit_text(generated_link, disable_web_page_preview=True)
         await t.edit_text(
-            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>",
+            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>\n\n Join - @DeathxBotz",
             reply_markup=IN_BUTTON,
             disable_web_page_preview=True)
     finally:
@@ -217,7 +217,7 @@ async def photo_upload_groups(bot, message):
     else:
         t = await msg.edit_text(generated_link, disable_web_page_preview=True)
         await t.edit_text(
-            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>",
+            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>\n\n Join - @DeathxBotz",
             reply_markup=IN_BUTTON,
             disable_web_page_preview=True)
     finally:
@@ -252,7 +252,7 @@ async def video_upload_group(bot, message):
     else:
         t = await msg.edit_text(generated_link, disable_web_page_preview=True)
         await t.edit_text(
-            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>",
+            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>\n\n Join - @DeathxBotz",
             reply_markup=IN_BUTTON,
             disable_web_page_preview=True)
     finally:
@@ -288,7 +288,7 @@ async def sticker_upload(bot, message):
     else:
         t = await msg.edit_text(generated_link, disable_web_page_preview=True)
         await t.edit_text(
-            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>",
+            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>\n\n Join - @DeathxBotz",
             reply_markup=IN_BUTTON,
             disable_web_page_preview=True)
     finally:
@@ -323,7 +323,7 @@ async def sticker_upload_group(bot, message):
     else:
         t = await msg.edit_text(generated_link, disable_web_page_preview=True)
         await t.edit_text(
-            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>",
+            f"Link - `{generated_link} `\n\n<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>\n\n Join - @DeathxBotz",
             reply_markup=IN_BUTTON,
             disable_web_page_preview=True)
     finally:
