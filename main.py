@@ -19,7 +19,7 @@ INLINE_SELECT = InlineKeyboardMarkup(
             InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/deathchatting_world")
         ],
         [
-            InlineKeyboardButton("Jᴏɪɴ ᴄʜᴀɴɴᴇʟ 🌐", url="https://t.me/telsabots")
+            InlineKeyboardButton("Jᴏɪɴ ᴄʜᴀɴɴᴇʟ 🌐", url="https://t.me/deathking_botworld")
         ]
     ]
 )
@@ -28,7 +28,7 @@ ERROR_BUTTON = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton("ʀᴇᴘᴏʀᴛ ʙᴜɢs 🤖", url="https://t.me/deathchatting_world"),
-            InlineKeyboardButton("ʟᴇᴀʀɴ ʙᴏᴛ 🙂", url="https://t.me/sanilaassistant_bot")
+            InlineKeyboardButton("ʟᴇᴀʀɴ ʙᴏᴛ 🙂", url="https://t.me/deathchatting_world")
         ]
     ]
 )
