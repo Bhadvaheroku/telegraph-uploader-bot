@@ -37,8 +37,8 @@ ERROR_BUTTON = InlineKeyboardMarkup(
 
 async def user_in_channels(user_id):
     # Check if the user is a member of both channels
-    channel1_member = await bot.get_chat_member("Channel1", user_id)
-    channel2_member = await bot.get_chat_member("Channel2", user_id)
+    channel1_member = await bot.get_chat_member("@DeathxBotz", user_id)
+    channel2_member = await bot.get_chat_member("@deathking_botworld", user_id)
     return channel1_member.status == "member" and channel2_member.status == "member"
 
 
