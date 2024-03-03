@@ -39,8 +39,8 @@ async def start(bot, message):
     text = f"Hello {message.from_user.first_name}!\n\nWelcome to the Telegraph uploader bot.\nYou can send me any " \
            f"image, video, animation and I will upload it to telegraph and send you a generated link. But the file must be LESS THAN 5MB!!\n\n" \
            f"<a href=https://t.me/deathchatting_world>Feel free to leave a feedback</a>"
-    image_url = "URL_TO_YOUR_IMAGE"
-    await message.reply_photo(photo=image_url, caption=text, reply_markup=INLINE_SELECT, disable_web_page_preview=True)
+    image_url = "https://telegra.ph/file/58e635c527bbf872a512f.jpg"
+    await message.reply_photo(photo=image_url, caption=text, reply_markup=INLINE_SELECT
     
 
 @bot.on_message(filters.photo & filters.private)
